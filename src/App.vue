@@ -1,7 +1,7 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+      <router-link :class="{active: $route.name === 'Home'}" to="/home">Task</router-link> |
+     <router-link :class="{active: $route.name === 'Register'}" to="/">Register</router-link>
   </nav>
   <router-view/>
 </template>
